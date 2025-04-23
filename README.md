@@ -1,89 +1,66 @@
-Personal Finance Management Application
+# 💰 Personal Finance Management Application
 
-Overview
+A user-friendly desktop application built with Python and Tkinter, designed to help individuals effectively manage their personal finances. This application allows users to track income and expenses, categorize transactions, and generate insightful financial reports.
 
-This is a Personal Finance Management application built using Python and the Tkinter library for the graphical user interface (GUI). The application allows users to register, log in, manage their income and expenses, view transactions, and generate financial reports.
+## 🧰 Features
 
-Features
+- **User Registration & Authentication**: Securely register and log in with a unique username and password.
+- **Transaction Management**: Add, view, and manage income and expense transactions with details like type, category, and amount.
+- **Financial Reporting**: Generate reports to view total income, total expenses, and savings.
+- **Data Persistence**: All data is stored in a SQLite database (`finance_manager.db`) to ensure information is retained across sessions.
+- **Intuitive GUI**: Built with Tkinter to provide a clean and responsive user interface.
 
-User Registration and Authentication
 
-Users can register with a unique username and password.
+## 🚀 Getting Started
 
-Users can log in with their credentials to access the application.
+### Prerequisites
 
-Transaction Management
+- Python 3.6 or higher
 
-Add transactions with details such as type (Income/Expense), category, and amount.
+### Installation
 
-View all transactions in a tabular format.
+1. Clone the repository:
 
-Financial Reports
+    ```bash
+    git clone https://github.com/Sahitha-chunduri/Personal-Finance-Management-Application.git
+    ```
 
-Generate financial reports to view total income, total expenses, and savings.
+2. Navigate to the project directory:
 
-Database Persistence
+    ```bash
+    cd Personal-Finance-Management-Application
+    ```
 
-Data is stored in a SQLite database (finance_manager.db) to ensure persistence across sessions.
+3. Install required dependencies:
 
-Usage
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-Run the Application:
+    *Note: If `requirements.txt` is not present, make sure `tkinter` is installed. Tkinter usually comes pre-installed with Python.*
 
-Navigate to the directory containing the script.
+4. Run the application:
 
-Execute the script using the command:
+    ```bash
+    python PersonalFinanceManagement.py
+    ```
 
-python personal_finance_app.py
 
-Register:
+## 🛠️ Technologies Used
 
-On the login window, click on the "Register" button to create a new account.
+- **Programming Language**: Python
+- **GUI Library**: Tkinter
+- **Database**: SQLite
 
-Enter a unique username and password, then click "Register."
+## 📈 Future Enhancements
 
-Log In:
+- Implement data visualization for spending trends.
+- Add budget planning and alerts for overspending.
+- Integrate export functionality to CSV or Excel formats.
 
-Enter your username and password, then click "Login."
+## 🤝 Contributing
 
-Add Transactions:
+Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
 
-After logging in, click on "Add Transaction."
 
-Fill in the type (Income/Expense), category, and amount, then click "Add."
 
-View Transactions:
-
-Click on "View Transactions" to see all your transactions in a tabular format.
-
-Generate Reports:
-
-Click on "Generate Report" to view your total income, expenses, and savings.
-
-Logout:
-
-Click on "Logout" to return to the login screen.
-
-Database Details
-
-Users Table:
-
-id: Primary key
-
-username: Unique username
-
-password: User password
-
-Transactions Table:
-
-id: Primary key
-
-user_id: Foreign key referencing the user
-
-type: Income or Expense
-
-category: Transaction category
-
-amount: Numerical value
-
-date: Date and time of transaction
